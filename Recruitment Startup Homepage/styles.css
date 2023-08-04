@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    height: 70px; /* Adjust the height of the navbar */
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-with-bg {
+    /* Set background image and other styles for the section */
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust the height as needed */
+    color: #fff; /* Set text color to contrast with the background image */
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+      margin-left: 20px; /* Adjust the margin for smaller screens */
+    }
+  }
+
+  .slider-container {
+    
+    overflow: hidden;
+    position: relative; 
+    top: 125px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  .slider {
+    display: flex;
+    animation: slideLeft 15s linear infinite; /* Adjust the animation duration as needed */
+
+  }
+  
+  .slider img {
+    width: 170px; /* Set the width of each image */
+    height: 80px; /* Set the height of each image */
+    margin: 50px 50px; /* Adjust the spacing between images */
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .container {
+    display: flex; /* Use flexbox to create a row layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* To center the content horizontally */
+    padding: 20px; /* Add padding to prevent overlap with other content */
+    position: relative;
+    top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .box {
+    flex: 0 0 30; /* Each box takes 30% of the container's width minus the margin */
+    padding: 20px;
+    height: 170px;
+    width: 320px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 10px; /* Add margin between the boxes */
+    box-sizing: border-box; /* Include padding and margin in the total width */
+  }
+  
+  .box img {
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    object-fit: cover; /* To maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular (optional) */
+  }
+  
+  .divider {
+    width: 4px; /* Set the desired width of the divider */
+    background-color: #ccc;
+    margin: 10px; /* Add margin between the divider and boxes */
+    box-sizing: content-box; /* Set box-sizing to content-box to prevent affecting the total width */
+  }
+
+  .footer {
+    height: 300px;
+    margin-top: 200px;
+    padding: 0 0;
+    background-color:  #2bc4c4;
+    bottom: 0; /* Position the footer at the bottom */
+    width: 100%; /* Make the footer full width */
+    justify-content: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px;
+    margin-top: -35px;
+  }
+  
+  .footer-section h4 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+  }
+  
+  .footer-section p {
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    color: #100e0e;
+  }
+  
+  .footer-bottom {
+    color: #0b0b0b;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 0 200px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    color: #100e0e;;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
